@@ -1,17 +1,20 @@
 
-
 void main()
 {
-TRISB0 = 0;
-LATB0 = 0;
-while(1)
-{
+    TRISB0 = 0;
+    LATB0 = 0;
+    while (1)
+    {
+        for (i = 0; i < 9; i++)
+        {
+            LATB0 = 1;
+            __Ms_delay(500);
+        }
+        for (i = 0; i < 9; i++)
+        {
+            LATB0 = 0;
+            __Ms_delay(500);
+        }
 
-LATB0 = 1;
-__Ms_delay(500);
-
-LATB0 = 0;
-__Ms_delay(500);
-
-}
+    }
 }
