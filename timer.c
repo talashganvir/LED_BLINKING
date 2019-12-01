@@ -11,13 +11,5 @@ void TOdelay_Ms(unsigned int COUNT)
     T0CONbits.TMR0ON = 0;
     INTCONbits.TMR0IF = 0;
 }
-//        EEADR = x;
-        //        c = gRxChar;
-        //        c++;
-        //        EEDATA = c;
-        //        myEEPROMWrite();
-        //        WREN = 0;
-        //        RD = 1;
-        //        EEADR = x;
-        //        TXREG = myEEPROMRead();
-        //        while (PIR1bits.TXIF == 0);
+ T0CONbits.TMR0ON = 0;
+    INTCONbits.TMR0IF = 0;
